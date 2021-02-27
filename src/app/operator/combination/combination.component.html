@@ -1,0 +1,92 @@
+<h1>Combination Operators!</h1>
+<ul>
+    <li>ajax</li>
+    <li>bindCallback</li>
+    <li>defer</li>
+    <li>empty</li>
+    <li>from</li>
+    <li>fromEvent</li>
+    <li>fromEventPattern</li>
+    <li>generate</li>
+    <li>interval</li>
+    <li>of</li>
+    <li>range</li>
+    <li>throwError</li>
+    <li>timer</li>
+    <li>iif</li>
+</ul>
+<div id="ajax">
+    <h3>Ajax</h3>
+    <p>Create an observable for an Ajax request with either a request object with url, headers, etc or a string for a
+        URL.</p>
+    <p>{{ajaxRes | json }}</p>
+</div>
+<div id="bindCallback">
+    <h3>BindCallback</h3>
+    <p>Converts a callback API to a function that returns an Observable.</p>
+    <p>{{bindCallBackRes | json }}</p>
+</div>
+<div id="defer">
+    <h3>Defer</h3>
+    <p>Create Observable at the time of subscription</p>
+    <p>{{deferRes | json }}</p>
+</div>
+<div id="empty">
+    <h3>Empty</h3>
+    <p>Observable that immediately completes</p>
+    <p>{{emptyRes | json }}</p>
+</div>
+<div id="from">
+    <h3>From</h3>
+    <p>Turn an array, promise, or iterable into an observable.</p>
+    <ul>
+        <li>This operator can be used to convert a promise to an observable!</li>
+        <li>For arrays and iterables, all contained values will be emitted as a sequence!</li>
+        <li>This operator can also be used to emit a string as a sequence of characters!</li>
+    </ul>
+    <p><span>Observable from array</span> {{fromArrRes}}</p>
+    <p><span>Observable from promise</span> {{fromPromiseRes}}</p>
+    <p><span>Observable from collection</span> {{fromCollectionRes}}</p>
+    <p><span>Observable from string</span> {{fromStrRes}}</p>
+</div>
+<div id="fromEvent">
+    <h3>From Event</h3>
+    <p>Turn event into observable sequence.</p>
+    <p>{{fromEventRes}}</p>
+</div>
+<div id="generate">
+    <h3>Generate</h3>
+    <p>Generates an observable sequence by running a state-driven loop producing the sequence's elements, using the
+        specified scheduler to send out observer messages.</p>
+    <p>{{generateEventRes}}</p>
+</div>
+<div id="interval">
+    <h3>Interval</h3>
+    <p>Emit numbers in sequence based on provided timeframe.</p>
+    <p>{{emptyRes}}</p>
+</div>
+<div id="of">
+    <h3>Of</h3>
+    <p>Emit variable amount of values in a sequence and then emits a complete notification.</p>
+    <p>{{ofRes}}</p>
+</div>
+<div id="range">
+    <h3>Range</h3>
+    <p>Emit numbers in provided range in sequence.</p>
+    <p>{{rangeRes}}</p>
+</div>
+<div id="throw">
+    <h3>Throw</h3>
+    <p>Emit error on subscription.</p>
+    <p>{{throwErrRes}}</p>
+</div>
+<div id="timer">
+    <h3>Timer</h3>
+    <p>After given duration, emit numbers in sequence every specified duration.</p>
+    <p>{{timerRes}}</p>
+</div>
+<div id="iif">
+    <h3>iif</h3>
+    <p>Decides at subscription time which Observable will actually be subscribed.</p>
+    <p>{{iifRes}}</p>
+</div>

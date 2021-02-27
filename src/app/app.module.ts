@@ -4,12 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { TextResizeDirective } from './text-resize.directive';
-
+import { ObservableComponent } from './observable/observable.component';
+import { ObserverComponent } from './observer/observer.component';
+import { TopicsComponent } from './topics/topics.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TextResizeDirective
+    ObservableComponent,
+    ObserverComponent,
+    TopicsComponent
   ],
   imports: [
     BrowserModule,
